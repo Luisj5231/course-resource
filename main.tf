@@ -2,7 +2,6 @@
 # VM
 module "instancia_ec2" {
   source       = "git::https://github.com/Luisj5231/TerraformModules.git//ec2-module"
-  #source       = "/home/z690/Documents/terrraform-course/ec2-module"
   amiId        = var.ami_ID
   instanceType = var.ec2_instance_type
   EC2keyName   = var.key_name_ec2
